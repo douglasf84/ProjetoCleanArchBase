@@ -1,10 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace CleanArchBase.MVC.Data
+namespace CleanArchBase.Infra.Data.Context
 {
     public class ApplicationDbContext : IdentityDbContext
     {
