@@ -1,4 +1,5 @@
 using CleanArchBase.Infra.IoC;
+using CleanArchBase.MVC.MappingConfig;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -20,6 +21,7 @@ namespace CleanArchBase.MVC
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddInfrastructure(Configuration);
+            services.AddAutoMapperConfiguration();
 
             services.AddRazorPages();
             services.AddControllersWithViews();

@@ -1,9 +1,13 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <UserSecretsId>aspnet-CleanArchBase.MVC-982039FA-59BC-4126-9EF7-D7B5A82BF23E</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\CleanArchBase.Infra.Data\CleanArchBase.Infra.Data.csproj" />

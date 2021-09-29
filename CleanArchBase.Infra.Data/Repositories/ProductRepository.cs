@@ -1,6 +1,7 @@
 ﻿using CleanArchBase.Domain.Entities;
 using CleanArchBase.Domain.Interfaces;
 using CleanArchBase.Infra.Data.Context;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -16,34 +17,32 @@ namespace CleanArchBase.Infra.Data.Repositories
             _context = context;
         }
 
-        public Task<Product> CreateAsync(Product Product)
+        public async Task CreateAsync(Product product)
         {
-            throw new NotImplementedException();
+            await _context.AddAsync(product);
+            await _context.SaveChangesAsync();
+        }
+        
+        public async Task<Product> GetByIdAsync(int? id)
+        {
+            return await _context.Products.FindAsync(id);
         }
 
-        public IEnumerable<Product> GetAll()
+        public async Task<IEnumerable<Product>> GetProductsAsync()
         {
-            return _context.Products;
+            return await _context.Products.ToListAsync();
         }
 
-        public Task<Product> GetByIdAsync(int? id)
+        public async Task RemoveAsync(Product product)
         {
-            throw new NotImplementedException();
+            _context.Remove(product);
+            await _context.SaveChangesAsync();
         }
 
-        public Task<IEnumerable<Product>> GetProductsAsync()
+        public async Task UpdateAsync(Product product)
         {
-            throw new NotImplementedException();
-        }
-
-        public Task<Product> RemoveAsync(Product Product)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<Product> UpdateAsync(Product Product)
-        {
-            throw new NotImplementedException();
+            _context.Update(product);
+            await _context.SaveChangesAsync();
         }
     }
 }

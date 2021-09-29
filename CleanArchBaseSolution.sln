@@ -1,17 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31624.102
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31717.71
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchBase.Aplication", "CleanArchBase.Aplication\CleanArchBase.Aplication.csproj", "{FD25A9F4-014E-44EC-B688-79B668763999}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchBase.Application", "CleanArchBase.Application\CleanArchBase.Application.csproj", "{FD25A9F4-014E-44EC-B688-79B668763999}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchBase.Domain", "CleanArchBase.Domain\CleanArchBase.Domain.csproj", "{ED6077CA-B290-4B20-BD46-F6725E16CA4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchBase.Domain", "CleanArchBase.Domain\CleanArchBase.Domain.csproj", "{ED6077CA-B290-4B20-BD46-F6725E16CA4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchBase.Infra.IoC", "CleanArchBase.Infra.IoC\CleanArchBase.Infra.IoC.csproj", "{21DEEFA6-9A81-48A3-A721-FFEA89C5A88E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchBase.Infra.IoC", "CleanArchBase.Infra.IoC\CleanArchBase.Infra.IoC.csproj", "{21DEEFA6-9A81-48A3-A721-FFEA89C5A88E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchBase.Infra.Data", "CleanArchBase.Infra.Data\CleanArchBase.Infra.Data.csproj", "{3FF4A4E9-63DF-414D-BEA0-BE176BD6B15D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchBase.Infra.Data", "CleanArchBase.Infra.Data\CleanArchBase.Infra.Data.csproj", "{3FF4A4E9-63DF-414D-BEA0-BE176BD6B15D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchBase.MVC", "CleanArchBase.MVC\CleanArchBase.MVC.csproj", "{D3C28A18-207C-4E64-AB0C-E5C9840CC6D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchBase.MVC", "CleanArchBase.MVC\CleanArchBase.MVC.csproj", "{D3C28A18-207C-4E64-AB0C-E5C9840CC6D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
