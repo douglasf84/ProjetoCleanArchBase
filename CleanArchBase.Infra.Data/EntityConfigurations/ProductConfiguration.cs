@@ -11,31 +11,6 @@ namespace CleanArchBase.Infra.Data.EntityConfigurations
             builder.Property(p => p.Name).HasMaxLength(100).IsRequired();
             builder.Property(p => p.Description).HasMaxLength(100).IsRequired();
             builder.Property(p => p.Price).HasPrecision(10, 2).IsRequired();
-
-            builder.HasData(
-                new Product
-                {
-                    Id = 1,
-                    Name = "Caderno",
-                    Description = "Caderno Espiral 100 folhas",
-                    Price = 9.45m
-                },
-                new Product
-                {
-                    Id = 2,
-                    Name = "Borracha",
-                    Description = "Borracha branca pequena",
-                    Price = 9.45m
-                },
-                new Product
-                {
-                    Id = 3,
-                    Name = "Estojo",
-                    Description = "Estojo de plástico pequeno",
-                    Price = 9.45m
-                }
-                );
-
         }
     }
 }

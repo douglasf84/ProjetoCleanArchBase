@@ -37,16 +37,19 @@ namespace CleanArchBase.Application.Services
             return _mapper.Map<IEnumerable<ProductViewModel>>(result);
         }
 
-        public async Task RemoveAsync(ProductViewModel product)
+        public async Task RemoveAsync(int? id)
         {
-            var mapProdutc = await _productRepository.GetByIdAsync(product.Id);
-            await _productRepository.RemoveAsync(mapProdutc);
+            var product = _productRepository.GetByIdAsync(id).Result;
+            await _productRepository.RemoveAsync(product);
         }
+
 
         public async Task UpdateAsync(ProductViewModel product)
         {
             var mapProdutc = _mapper.Map<Product>(product);
             await _productRepository.UpdateAsync(mapProdutc);
         }
+
+
     }
 }

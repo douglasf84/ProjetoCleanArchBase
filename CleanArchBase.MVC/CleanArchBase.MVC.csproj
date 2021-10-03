@@ -10,7 +10,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CleanArchBase.Infra.Data\CleanArchBase.Infra.Data.csproj" />
     <ProjectReference Include="..\CleanArchBase.Infra.IoC\CleanArchBase.Infra.IoC.csproj" />
   </ItemGroup>
 

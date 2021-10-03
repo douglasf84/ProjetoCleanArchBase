@@ -8,7 +8,7 @@ namespace CleanArchBase.Application.Interfaces
     {
         Task CreateAsync(ProductViewModel product);
         Task UpdateAsync(ProductViewModel product);
-        Task RemoveAsync(ProductViewModel product);
+        Task RemoveAsync(int? id);
         Task<IEnumerable<ProductViewModel>> GetProductsAsync();
         Task<ProductViewModel> GetByIdAsync(int? id);
     }

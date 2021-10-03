@@ -1,0 +1,40 @@
+﻿@model CleanArchBase.Application.ViewModels.ProductViewModel
+
+@{
+    ViewData["Title"] = "Update Product";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="Update" class="row g-3">
+    <div asp-validation-summary="ModelOnly" class="text-danger">
+        <hr />
+        <vc:summary />
+    </div>
+
+    <div class="col-md-6">
+        <input type="hidden" asp-for="Id" />
+        <label asp-for="Name" class="form-label">Name</label>
+        <input type="text" class="form-control" asp-for="Name">
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="col-md-6">
+        <label asp-for="Price" class="form-label">Price</label>
+        <input type="text" class="form-control" asp-for="Price">
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+    <div class="col-12">
+        <label asp-for="Description" class="form-label">Description</label>
+        <input type="text" class="form-control" asp-for="Description">
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    <hr />
+    <div class="col-12">
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Salve" class="btn btn-success">
+                <a asp-action="Index" class="btn btn-info">Back to List</a>
+            </div>
+        </div>
+    </div>
+</form>
